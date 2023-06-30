@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/budget"
+        android:title="Budget"
+        android:icon="@drawable/createbudget"/>
+
+    <item
+        android:id="@+id/expenses"
+        android:title="Expenses"
+        android:icon="@drawable/addexpenses"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/user"
+        android:title="User"
+        android:icon="@drawable/userpro"/>
+
+    <item
+        android:id="@+id/PDF"
+        android:title="Report"
+        android:icon="@drawable/exportpdf"/>
+
+<!--    <item-->
+<!--        android:id="@+id/ewalet"-->
+<!--        android:title="E-Wallet"-->
+<!--        android:icon="@drawable/ewallet"/>-->
+
+</menu>

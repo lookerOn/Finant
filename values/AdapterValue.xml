@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="currency_array">
+        <item>MYR - MALAYSIA</item>
+        <item>CNY - CHINA</item>
+        <item>WON - KOREA</item>
+        <item>USD - UNITED STATE</item>
+        <item>EU  - EUROPE</item>
+    </array>
+
+</resources>

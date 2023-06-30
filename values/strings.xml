@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Finant</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="forgotpasswordbtn">FORGOT PASSWORD</string>
+    <string name="SwapRegistration">REGISTRATION</string>
+    <string name="SwapLogin">LOGIN</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="logout">LOGOUT</string>
+    <string name="googlesignin">OR SIGN IN WITH GOOGLE</string>
+    <string name="verify_btn">VERIFY</string>
+    <string name="alertverify">Please Verify Your Email Address Before Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_text">HOME</string>
+    <string name="user_profile">USER PROFILE</string>
+    <string name="emailuser">EMAIL</string>
+    <string name="change_email_address">CHANGE EMAIL ADDRESS</string>
+    <string name="resetpasswordbtn">resetpasswordbtn</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="create_budget">CREATE BUDGET</string>
+    <string name="doubleclick"><font size="22">DOUBLE CLICK CHOOSE BEGIN DATE</font></string>
+    <string name="add_budget">ADD BUDGET</string>
+    <string name="deactivate_account">DEACTIVATE ACCOUNT</string>
+    <string name="edit_budget">EDIT BUDGET</string>
+    <string name="reloadBTN">RELOAD</string>
+</resources>

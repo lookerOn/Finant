@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePicker" parent="Theme.Material3.Light.Dialog">
+        <!-- Customize the background color of the date picker dialog -->
+        <item name="colorSurface">#000000</item>
+
+        <!-- Customize the text color of the selected date -->
+        <item name="colorOnPrimary">#6C4C83</item>
+
+        <!-- Customize the text color of the unselected dates -->
+        <item name="android:textColorLink">#0B0B0B</item>
+    </style>
+</resources>
