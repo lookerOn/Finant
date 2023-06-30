@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Finant1"
+    android:background="#04001B"
+    tools:context=".UserFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/user_profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="200dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="300dp"
+        android:id="@+id/btn_CHANGEMAIL"
+        android:text="@string/change_email_address"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_marginTop="400dp"
+        android:id="@+id/btn_resetpassword"
+        android:text="@string/reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="470dp"
+        android:id="@+id/btn_deactivate"
+        android:text="@string/deactivate_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="540dp"
+        android:id="@+id/btn_logout"
+        android:text="SIGN OUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+</FrameLayout>

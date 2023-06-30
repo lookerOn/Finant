@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:theme="@style/Theme.Finant1"
+android:id="@+id/expList"
+tools:context=".ExpensesListFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/budgetNME"
+        android:hint="BUDGET NAME"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#4A1C8C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ProgressBar
+        android:id="@+id/budgetProgress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/customprogress" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="120dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerExp"
+        android:layout_width="match_parent"
+        android:layout_height="620dp" />
+</LinearLayout>
+</FrameLayout>

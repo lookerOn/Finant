@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0020"
+    tools:context=".WalletFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="E-WALLET"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ewaletheader2"
+        android:rotation="173" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/wh3"
+        android:rotation="165" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/wh4"
+        android:rotation="155" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ewaletheader"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/walletAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="RM 0.00"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/custombg"
+                android:text="RELOAD"
+                android:textSize="12dp"
+                android:textColor="#0F0020"/>
+
+            <TextView
+                android:id="@+id/transhis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/custombg"
+                android:text="TRANSACTION HISTORY"
+                android:textSize="12dp"
+                android:textColor="#0F0020"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ewaletheader2"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/wh3"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginRight="95dp"
+        android:background="@drawable/wh4"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/ewaletheader"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="23dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/qrscan"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/qrscan"
+                app:tint="#C3FFFF" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/qrpay"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/qrpayment"
+                app:tint="#C3FFFF" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/transfer"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/transfer"
+                app:tint="#C3FFFF" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/billing"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/billing"
+                app:tint="#C3FFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

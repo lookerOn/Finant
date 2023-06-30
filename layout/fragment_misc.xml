@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Finant1"
+    android:background="#000000"
+    android:id="@+id/MISC"
+    tools:context=".MiscFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="CREATE MISC"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:text="PLEASE BE NOTED THAT \nTHIS MISC BUDGET IS ONLY USED FOR EMERGENCY SITUATION \nONLY ALLOWED ONE CREATION PER MONTH"
+        android:layout_marginTop="135dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp">
+
+        <ImageView
+            android:id="@+id/m1"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/m1"
+            app:tint="#9E9E9E" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount"
+                android:hint="AMOUNT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp">
+
+        <ImageView
+            android:id="@+id/calend"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/calender"
+            app:tint="#9E9E9E"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSelectDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/doubleclick"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectDate"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="400dp"
+        android:id="@+id/btn_createMis"
+        android:text="CREATE MISC BUDGET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custombtn1"
+        android:textColor="#ffffff"/>
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@style/Theme.Finant1"
+    android:id="@+id/addBudpage"
+    tools:context=".AddBudget">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="MY BUDGET"
+            android:textColor="#3F116E"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_addBudGET"
+        android:text="@string/add_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custombtn"
+        android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_VIEWMISC"
+            android:text="VIEW MISC BUDGET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/custombtn"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="230dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+    </LinearLayout>
+</FrameLayout>

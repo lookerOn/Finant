@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Finant1"
+    android:background="#04001B"
+    android:id="@+id/createbdg"
+    tools:context=".BudgetFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/create_budget"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp">
+
+        <ImageView
+            android:id="@+id/t1"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/t1"
+            app:tint="#9E9E9E" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/budgetname"
+                android:hint="BUDGET NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp">
+
+        <ImageView
+            android:id="@+id/m1"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/m1"
+            app:tint="#9E9E9E" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount"
+                android:hint="AMOUNT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp">
+
+        <ImageView
+            android:id="@+id/c1"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/c1"
+            app:tint="#9E9E9E"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menudrpdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="CHOOSE CURRENCY"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:id="@+id/currencyOpt"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp">
+
+        <ImageView
+            android:id="@+id/calend"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/calender"
+            app:tint="#9E9E9E"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSelectDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/doubleclick"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectDate"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+
+        <ImageView
+            android:id="@+id/r1"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/repeat1"
+            app:tint="#9E9E9E" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="REPEAT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:id="@+id/repeating"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="540dp"
+        android:id="@+id/btn_createBud"
+        android:text="CREATE BUDGET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custombtn"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_marginTop="620dp"
+        android:id="@+id/btn_emergency"
+        android:text="MISC BUDGET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+</FrameLayout>

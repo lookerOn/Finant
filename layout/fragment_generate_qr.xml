@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/geneQR"
+    android:background="@color/white"
+    tools:context=".GenerateQrFragment">
+
+    <ImageView
+        android:id="@+id/qr_code_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"/>
+
+    <Button
+        android:layout_marginTop="550dp"
+        android:id="@+id/btn_HOMEWT"
+        android:text="BACK TO WALLET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"/>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fnnbk5"
+    android:id="@+id/toreload"
+    android:theme="@style/Theme.Finant1"
+    tools:context=".ReloadFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="E-WALLET RELOAD"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reloadAmount"
+            android:hint="AMOUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="300dp"
+        android:id="@+id/btn_reload"
+        android:text="@string/reloadBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"/>
+
+</FrameLayout>

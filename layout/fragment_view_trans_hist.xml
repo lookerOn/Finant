@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fnnbk5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewTransHistFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="TRANSACTION HISTORY"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+
+        <TextView
+            android:id="@+id/reloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/custombg"
+            android:text="RELOAD"
+            android:textSize="12dp"
+            android:textColor="#0F0020"/>
+
+        <TextView
+            android:id="@+id/transfering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/custombg"
+            android:text="TRANSFER"
+            android:textSize="12dp"
+            android:textColor="#0F0020"/>
+
+        <TextView
+            android:id="@+id/receiving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/custombg"
+            android:text="RECEIVE"
+            android:textSize="12dp"
+            android:textColor="#0F0020"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="550dp" />
+    </LinearLayout>
+
+</FrameLayout>
